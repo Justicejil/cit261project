@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+    background-color: silver;
+}
+
+
+h1 {
+    color: red;
+    text-align: center;
+}
+h2 {
+    color: blue;
+    text-align: center;
+}
+
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    color: black;
+}
+#myDIV {
+    width: 300px;
+    height: 200px;
+    background: red;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+div#shape1 {
+    width: 300px;
+    height: 200px;
+    background: #9DCEFF;
+}
+</style>
+<script>
+    function fadeOut(el) {
+        var elem = document.getElementById(el);
+        elem.style.transition = "opacity 1.0s linear 0s";
+        elem.style.background  = 0;
+        
+    }
+    function fadeIn(el) {
+        var elem = document.getElementById(el);
+        elem.style.transition = "opacity 1.0s linear 0s";
+        elem.style.opacity  = 1;
+        
+    }
+</script>
+
+</head>
+<body>
+   
+    
+    <h1>Creating CSS3 Transitions, Animations and triggering them with JavaScript </h1>
+<h2>Transition/Animation.</h2>
+
+<p>CSS is the beauty that brighten every codes<p>
+<div id="myDIV"></div>
+  
+<p>The background-position property is <em>animatable</em> in CSS.</p>
+<p> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+ <button onclick="fadeOut('shape1');">Fade out</button>
+ <button onclick="fadeIn('shape1');">Fade in</button>
+ 
+    <div id="shape1">awesome</div>
+    
+<center><h1 class= "solid" style="color: orange;">Justice</h1></center>
+
+</body>
+</html>
+
