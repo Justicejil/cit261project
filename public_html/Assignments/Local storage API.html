@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+sandbox
+-->
+<html>
+    <head>
+        <title>Local Storage API, storing and retrieving simple data</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+ 
+        if (localStorage.hits) {
+        localStorage.hits-Number(localStorage.hits)+1;}
+        else{localStorage.hits=1;}
+        document.write("Total Hits :" + localStorage.hits);
+        
+        </script>
+        <br><br>
+        <div><b>Local Storage</b> can be used to store certain details about a user
+            as well as cut down request for database information.<br>
+        It is has a longer term memory that remains persistence unlike the session storage which clears when the 
+        user exit the browser</div>
+        <p>The <b>"localStorage.clear()"</b> command is used to delete nor clear information 
+        from a local storage sense.</p>
+    </body>
+</html>

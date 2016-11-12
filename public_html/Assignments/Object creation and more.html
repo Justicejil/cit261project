@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+sandbox
+-->
+<html>
+    <head>
+        <title>Object Creation Functions, inheritance, Properties, Methods and instantiation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script>
+        // Am going to Create Player class-based object
+        function player () {
+            this.name;
+            this.hitpoints = 100;
+            this.attack = function attack(opponent) {
+                opponent.hitpoints -= 10;
+                alert(this.name+" just hit "+opponent.name);
+            }
+        }
+        
+        // Create two new separate Player instances
+        
+        var p1 = new player();
+        var p2 = new player();
+        
+        //The players name
+        p1.name = "Superman";
+        p2.name = "Batman";
+        
+        // I made player1 attack player2
+        p1.attack(p2);
+        alert(p2.name+" has "+p2.hitpoints+"hit points left");
+    </script>
+    </head>
+    
+    <body>
+     
+    </body>
+</html>
