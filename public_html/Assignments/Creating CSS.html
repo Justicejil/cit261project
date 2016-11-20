@@ -42,25 +42,21 @@ p {
     from {background-color: red;}
     to {background-color: blue;}
 }
-div#shape1 {
+div#myJ {
     width: 300px;
     height: 200px;
-    background: #9DCEFF;
+    background: orange;
 }
 </style>
 <script>
-    function fadeOut(el) {
-        var elem = document.getElementById(el);
-        elem.style.transition = "opacity 1.0s linear 0s";
-        elem.style.background  = 0;
-        
+   function myJ() {
+    var x = document.getElementById('myJ');
+    if (x.style.visibility === 'hidden') {
+        x.style.visibility = 'visible';
+    } else {
+        x.style.visibility = 'hidden';
     }
-    function fadeIn(el) {
-        var elem = document.getElementById(el);
-        elem.style.transition = "opacity 1.0s linear 0s";
-        elem.style.opacity  = 1;
-        
-    }
+}
 </script>
 
 </head>
@@ -76,12 +72,11 @@ div#shape1 {
 <p>The background-position property is <em>animatable</em> in CSS.</p>
 <p> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
 
- <button onclick="fadeOut('shape1');">Fade out</button>
- <button onclick="fadeIn('shape1');">Fade in</button>
+ <button onclick="myJ()">Hide/Appear</button>
  
-    <div id="shape1">awesome</div>
+    <div id="myJ">awesome</div>
     
-<center><h1 class= "solid" style="color: orange;">Justice</h1></center>
+<center><h1 style="color: orange;">Justice</h1></center>
 
 </body>
 </html>
