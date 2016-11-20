@@ -8,18 +8,35 @@ HTML 5 TAGS.
     <title>Html 5 Tags- Video, Audio and Canvas</title>
 <link href="/css/screen.css" type="text/css" rel="stylesheet" media="screen">
     <meta name="author" content="Justice Okai">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-	
+    <body>
 	<h1> Video Tag </h1>
-	
-	<div>
-                              
-<iframe width="300" height="200" src="https://www.youtube.com/embed/Tjnq5StX68g"  frameborder="0" allowfullscreen></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/xdN8rfwW3SI"  frameborder="0" allowfullscreen></iframe>
-<iframe width="300" height="200" src="http://www.youtube.com/embed/XGSy3_Czz8k" frameborder="0" allowfullscreen></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/aN1P7S3HdQU"  frameborder="0" allowfullscreen></iframe> <br>
+        
+<div style="text-align:center">
+  <button onclick="playPause()">Play/Pause</button>
+  
+  <br><br>
+  <video id="video1" width="420">
+    <source src="D:\BITW\Quick list/wwe.mp4" type="video/mp4">
+    <source src="D:\BITW\Quick list/wwe.ogg" type="video/ogg">
 
+  </video>
+</div>
+
+<script>
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
+}
+
+</script>
+<br>
+<div>
                   <h1> Audio Tag </h1>
 <audio controls>
 
