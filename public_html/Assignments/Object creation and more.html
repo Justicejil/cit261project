@@ -8,28 +8,24 @@ sandbox
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <script>
-        // Am going to Create Player class-based object
-        function player () {
+   
+        function fighter () {
             this.name;
-            this.hitpoints = 100;
-            this.attack = function attack(opponent) {
-                opponent.hitpoints -= 10;
+            this.hitpoints = 10;
+            this.strike = function strike(opponent) {
+                opponent.hitpoints -= 1;
                 alert(this.name+" just hit "+opponent.name);
             }
         }
         
-        // Create two new separate Player instances
+        var f1 = new fighter();
+        var f2 = new fighter();
         
-        var p1 = new player();
-        var p2 = new player();
+        f1.name = "Michael";
+        f2.name = "Luci";
         
-        //The players name
-        p1.name = "Superman";
-        p2.name = "Batman";
-        
-        // I made player1 attack player2
-        p1.attack(p2);
-        alert(p2.name+" has "+p2.hitpoints+"hit points left");
+        f1.strike(f2);
+        alert(f2.name+" has "+f2.hitpoints+"hit points left");
     </script>
     </head>
     
