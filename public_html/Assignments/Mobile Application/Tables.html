@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title> Multiplication Tables </title>
+
+
+<script type="text/javascript">
+/*Easy,Quick and Fast*/
+function taBles(){
+var base = parseFloat(document.getElementById("number").value);
+
+  for(var i=0; i<=12; i++){ 
+                   //format           // result
+  document.write(""+base+" x "+i+" = "+i * base+" <p>");
+  }
+  }
+</script>
+</head>
+<body>
+<h1> Tables </h1>
+<h3>Please enter a number:<input type="text" id="number"></h3>
+<p></p>
+<button type="button" onclick="taBles()">Answer</button>  
+</body>
+</html>

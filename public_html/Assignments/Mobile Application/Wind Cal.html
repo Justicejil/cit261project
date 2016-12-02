@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Wind Chill</title>
+
+<!-- input: current temperature(f) and wind speed(mph)
+	 processing: the wind chill factor
+	 output: wind chill factor -->
+
+<script type="text/javascript">
+
+function compute() {
+
+	var temperature = document.getElementById('temperature').value;
+	var windSpeed = document.getElementById('windSpeed').value;
+	
+	var chill = windChill(temperature, windSpeed);
+	
+	document.getElementById('output').innerHTML = chill.toFixed(1);
+}
+
+function windChill(t, s) {
+
+	var chill = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + ((0.4275 * t) * (Math.pow(s, 0.16)))
+	
+	return chill;
+}
+</script>
+</head>
+
+<body>
+<h1>Find out the wind chill!</h1>
+Temperature (Fahrenheit): <input type="text" id="temperature">
+Wind Speed (mph):  <input type="text" id="windSpeed">
+<button type="button" onclick="compute()">Wind Chill</button>
+
+<br><br>The wind chill factor is: 
+<div id="output" style="display:inline; white-space:nowrap;"></div>°F
+</body>
+</html>

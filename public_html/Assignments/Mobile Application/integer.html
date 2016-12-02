@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Sum of Odd Integers</title>
+<script language="javascript" type="text/javascript">
+ 
+function integerSum() 
+{
+	var input = parseInt(document.getElementById('n').value);
+	var sum = 0;
+	
+	for (i = 1; i <= input; i += 2)
+	{
+		sum += i;
+	} 
+	  
+   	
+document.getElementById('output').innerHTML = "The sum of all odd integers is " + sum;
+   
+   	
+}
+	
+</script>
+</head>
+
+<body>
+<br/>
+Input an integer<br/>
+<br/>
+<input type="text" id="n" size="8"><br/>
+<br/>
+<button type="button" onclick="integerSum()">What is the odd sum?</button>  
+
+<br/>
+<br/>
+<div id="output"></div> 
+<br/>
+</body>
+</html> 
