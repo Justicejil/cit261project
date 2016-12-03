@@ -11,6 +11,7 @@ and open the template in the editor.
 body{
     
     font-family: arial, sans-serif;
+     background-color: #002147;
     
 }
 
@@ -57,14 +58,31 @@ body{
 }
 #nav_wrapper ul li:hover {
    
- background: red;
+ background: #003815;
  transition: all 0.45s;
  opacity: 0.9;
   filter:alpha(opacity=90);
     
 }
 
-h1.solid { 
-border-style:solid;
+h1 { 
+color: white;
+ text-align:center;
+  font-family: overpass;
 }
+
+footer {
+    background-color:black;
+    color:blueviolet;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	
+ 
+}
+
+p {
+    color: white;
+    font-family: Times New Roman;
+}
+
 

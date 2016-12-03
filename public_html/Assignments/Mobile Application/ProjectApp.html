@@ -10,7 +10,7 @@
     
 
     <body>
-        <h1>Practice and Master your simple Mathematical Equations</h1>
+    <h1>Practice and Master your simple Mathematical Equations</h1>
         <div id="nav"> <br>
             
             <div id="nav_wrapper"><br>
@@ -32,9 +32,41 @@
        
 </div>
         
-                <div><p>
-            This App can help you to learn, master, and have a quick, fast correct answers in basic mathematics equation all by computing them.
-            </p></div>
+                <div>
+ <p> This Application enables a user to learn, master, and easily earn fast and correct answers in basic mathematics equations, just by computing them.</p>
+                </div>
+       <div style="text-align:center">
+  <button onclick="playPause()">Play/Pause</button>
+  
+  <br><br>
+  <video id="video1" width="300">
+    <source src="maths.mp4" type="video/mp4">
+    <source src="maths.ogg" type="video/ogg">
+
+  </video>
+</div>
+
+<script>
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
+}
+
+</script>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+        <footer>
+				
+  &copy; 2016 okaiexp.com (APP) All Rights Reserved   
+</footer>        
+        
     </body>
 
 </html>
