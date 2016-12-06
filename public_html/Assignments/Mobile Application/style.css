@@ -1,10 +1,5 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
-    Created on : Dec 2, 2016, 5:19:07 PM
+    Created on : Nov 24, 2016, 5:19:07 PM
     Author     : Justice Okai
 */
 
@@ -27,14 +22,12 @@ body{
 
 #nav_wrapper {
    
-    background-color: #377D7A;
-    height:100px;
-    width:980px;
-    margin-left: auto;	
-    margin-right: auto;	
-    margin-top: 100px;
-    opacity: 0.7;
-    filter:alpha(opacity=70);
+    background-color: rgba(55, 125, 122, 0.6);
+    height:auto;
+    width:auto;
+    margin-left: 5em;	
+    margin-right: 5em;	
+	padding-bottom:1.2em;
     
 }
 
@@ -84,5 +77,76 @@ p {
     color: white;
     font-family: Times New Roman;
 }
+#animated_div {
+ 
+    height: 47px;
+    background: #92B901;
+    color: #ffffff;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    animation: animated_div 5s 1;
+    -moz-animation: animated_div 5s 1;
+    -webkit-animation: animated_div 5s 1;
+    -o-animation: animated_div 5s 1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+@keyframes animated_div
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;}
+50% {transform: rotate(0deg);left:500px;}
+55% {transform: rotate(0deg);left:500px;}
+70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
+}
 
+@-webkit-keyframes animated_div
+{
+0% {-webkit-transform: rotate(0deg);left:0px;}
+25% {-webkit-transform: rotate(20deg);left:0px;}
+50% {-webkit-transform: rotate(0deg);left:500px;}
+55% {-webkit-transform: rotate(0deg);left:500px;}
+70% {-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {-webkit-transform: rotate(-360deg);left:0px;}
+}
 
+@-moz-keyframes animated_div
+{
+0%  {-moz-transform: rotate(0deg);left:0px;}
+25% {-moz-transform: rotate(20deg);left:0px;}
+50%  {-moz-transform: rotate(0deg);left:500px;}
+55%  {-moz-transform: rotate(0deg);left:500px;}
+70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {-moz-transform: rotate(-360deg);left:0px;}
+}
+
+@-o-keyframes animated_div
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;}
+50%  {transform: rotate(0deg);left:500px;}
+55%  {transform: rotate(0deg);left:500px;}
+70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
+}
+
+@media (max-width:1200px) {
+	ul.navigation li a {
+		display:block !important;
+		padding:0em !important;
+		border-bottom:1px solid rgba(255,255,255,0.3);
+	}
+	ul.navigation li a:hover {
+		background-color:rgba(0,0,0,0.3);
+		padding:0.25em;
+		border-left:1px solid transparent;
+	}
+	#nav_wrapper {
+		margin:0 !important;
+		margin-top:2em !important;
+		margin-bottom:2em !important;
+	}
+}
