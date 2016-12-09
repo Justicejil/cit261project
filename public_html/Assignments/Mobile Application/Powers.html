@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Powers of numbers </title>
+
+
+<script type="text/javascript">
+
+function poWer(){
+var base = parseFloat(document.getElementById("number").value);
+
+  for(var i=0; i<=12; i=i+1){ 
+  alert(""+base +" ^ "+i+" = "+Math.pow(base,i)+"");
+  }
+  }
+</script>
+</head>
+<body>
+    <ul><li><a href="ProjectApp.html" title="Mobile Application">Home</a></li></ul>
+<h1> Power your numbers here</h1>
+<h3>Please enter a number:<input type="text" id="number"></h3>
+<p></p>
+<button type="button" onclick="poWer()">Answer</button>  
+</body>
+</html>
