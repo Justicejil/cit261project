@@ -150,3 +150,10 @@ p {
 		margin-bottom:2em !important;
 	}
 }
+div#result {
+	color:#fff;
+	font-family:'Times New Roman';
+	font-size:1em;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+}
